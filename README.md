@@ -1,7 +1,12 @@
 # Coursera_ExploratoryDataAnalysis_Projec1_01102019
 Week 1 Peer Review Assignment of Coursera's Exploratory Data Analysis course
 
+#This is the submission to Project 1 of Exploratory Data Analysis,the Coursera course. Following is the full code.
+
 #Full Code
+
+
+
 #LOADING DATA
 full.data <- read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings = "?", colClasses = c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'))
 
@@ -13,6 +18,7 @@ full.data$Times <- strptime(full.data$Date.Time, format = "%Y-%m-%d %H:%M:%S")
 #subsetting necessary data
 power.consumption <- full.data[which(full.data$Dates >= "2007-02-01" & full.data$Dates <= "2007-02-02"),]
 power.consumption$Weekdays <- weekdays(power.consumption$Dates)
+
 
 
 #MAKING PLOTS
@@ -46,3 +52,5 @@ lines(x = power.consumption$Times, y = power.consumption$Sub_metering_3, col = "
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, col = c("black", "red", "blue"))
 plot(x = power.consumption$Times, y = power.consumption$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power")
 dev.off()
+
+#end
