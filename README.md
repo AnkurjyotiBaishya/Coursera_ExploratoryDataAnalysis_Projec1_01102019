@@ -1,4 +1,4 @@
-# Coursera_ExploratoryDataAnalysis_Projec1_01102019
+# Coursera_ExploratoryDataAnalysis_Project1_01102019
 Week 1 Peer Review Assignment of Coursera's Exploratory Data Analysis course
 
 #This is the submission to Project 1 of Exploratory Data Analysis,the Coursera course. Following is the full code.
